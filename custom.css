@@ -1,0 +1,744 @@
+/* CSS Google Font */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap');
+
+/* font-family: 'Grand Hotel', cursive; */
+
+:root {
+    --white: #ffffff;
+    --greyback: #F1F4F5;
+    --intresse: #E0E0E0;/* Skrivstilen */
+    --text: #A6ADB4;    /* Brödtext */
+    --purple2: #411837; /* Sökruta mm */
+    --purple1: #672B59; /* Button, rubbe */
+    --purple3: #882972; /* Button hover */
+    --darkPurple: #352839;/*header, footer*/
+    --black: #000000;}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 14px;*/
+    font-size: 0.875rem; 
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+
+
+/* ---  Formulär - input textarea knappar  --- */
+
+textarea,
+input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--black) ;
+  background-color: rgba(255, 255, 255, 0.883);
+  border: 1px solid var(--text);
+  padding: 0.8rem;
+  outline: 0;
+  transition: all 0.15s ease-in-out ;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  -webkit-transition: all 0.15s ease-in-out ;
+  -moz-transition: all 0.15s ease-in-out ;
+  -ms-transition: all 0.15s ease-in-out ;
+  -o-transition: all 0.15s ease-in-out ;
+}
+
+input::placeholder,
+textarea::placeholder  {
+    color: var(--text)
+  }
+
+textarea:focus,
+input:focus {
+  outline: 0;
+  border-color: var(--purple1);
+  box-shadow: 0 0 0.50rem 0.015rem var(--purple1);
+}
+
+  button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    background-color:  var(--purple1);
+    color: var(--white) ;
+    padding: 1.05rem 2rem;
+
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+button:hover {
+    background-color:  var(--purple3);
+    color: #ffffff;
+    outline: 0;
+}
+
+label {
+    display: block;
+}
+
+
+/* ---  Rubbar  --- */
+
+.textblock h1 {
+    font-size: 2.5rem; /*rubbe textblock*/
+    font-weight: 700;
+    color: var(--purple1);
+}
+
+.sokrutaStart h1 {
+    font-size: 4.5rem; /*sök ettan*/
+    font-weight: 700;
+}
+
+
+h2 {
+    font-size: 1.5rem !important; /*pagetitle*/
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--purple1);
+    margin-bottom: 1.8rem;
+}
+
+h2 .pageTitle {
+    color: var(--purple1);
+}
+
+
+
+h4  /*trendcard*/
+
+.h6, h6 {
+    font-size: 1rem !important;  /* formulaär */
+    font-weight: 500;
+    }
+
+
+
+/* ------  Header/Navbar  ------ */
+
+.navColor {
+    background-color: var(--darkPurple);
+}
+
+.navbar {
+    padding: 1rem 1rem; /* Padding runt hela menyn*/
+}
+
+.navbar li a {padding: 1em 0 1em 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover,
+.navbar li a:hover {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    margin-left: 2rem;
+    /* avstånd mellan logga och meny */
+}
+
+.navbar-dark .navbar-nav .active .nav-link {
+    color: var(--white);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white);
+    /* padding-bottom: 0.01rem;
+    border-bottom: 2px solid transparent; */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--white);
+    /* border-bottom: 2px solid var(--purple3); */
+}
+
+/* ------  margin top för topimage ------ */
+
+.topWrap {
+    margin-top: 7.3rem; 
+}
+
+/* ------  TOPIMG & SÖKRUTA STARTSIDA  ------ */
+
+ .topimageStart  {
+    height: 92vh;
+    width: 100%;
+    display: block;
+    background-image: url(images/topimg/startbild.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+/* ---  sök start --- */
+
+.sokrutaStart {
+    color: var(--white);
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10%;
+    width: 94%;
+    max-width: 600px;
+    text-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.678);
+}
+
+
+#formStart  {
+    padding:  0.3rem 0;
+}
+
+.inputStart {
+    width: 90%;
+}
+
+.seachbtnStart {
+padding: 1.05rem 3.5rem;
+margin: 1rem 0;
+}
+
+
+
+/* ------  TOPIMG & SÖKRUTA UNDERSIDA  ------ */
+
+
+
+.topImage  {
+    min-width: 100%;
+    height: 250px;
+    background-image: url(images/topimg/noodles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; 
+ 
+}
+
+/* ---  sök undersida --- */
+
+.sok {
+    background-color: var(--purple2);
+    color: var(--white);
+    font-size: 0.7rem;
+}
+
+.searchTxt {
+    padding:  1.8rem 0;
+}
+
+#searchForm  {
+    padding:  0.3rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputSeach {
+   flex: 5;
+   margin-right: 1rem;
+}
+
+.btnSeach {
+    flex: 1;
+padding: 1.05rem 3.5rem;
+}
+
+
+
+/* ------  MAIN  ------ */
+
+
+main {
+    padding: 1.8rem 0;
+}
+
+
+
+
+/* ---  trending  --- */
+
+.trendContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-content: space-between;
+}
+
+.trending  {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text);
+    margin:  0 0 1rem 0;
+    border: 1px solid var(--greyback);
+    position: relative;
+    padding-bottom: 1rem;
+  
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.trending img {
+max-width: 100%;
+height: auto;
+border-top-left-radius: 0.3rem;
+border-top-right-radius: 0.3rem;
+}
+
+.trendingTxt {
+    padding: 1rem;
+}
+
+.trending .trendingTxt h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--black);
+    margin:  0.5rem 0 0.2rem 0;
+}
+
+.info {
+ display: flex;
+ position: absolute;
+    bottom: 0;
+    height: 2.2rem;
+}
+
+.time {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
+
+.fa-clock {
+    font-size: 0.9rem;
+}
+
+.nrIngredients {
+    font-size: 0.9rem;
+}
+
+/* ------  STORT TEXTBLOCK ------ */
+
+.textblockRubbe {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.twoCols {
+column-count: 1;
+column-gap: 1.8rem;
+}
+
+/* ------  KONTAKT FORMULÄR  ------ */
+
+.twoway {
+    padding: 0 0 1.8rem 0;
+    color: rgb(250, 205, 58);
+}
+
+.contact {
+    background-color: var(--purple2);
+    color: var(--white);
+    font-size: 0.7rem;
+    padding: 1.8rem 0;
+}
+
+.kontakt {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px; 
+}
+
+.kontakt .f #firstname {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;  
+}
+
+.kontakt .l #lastname{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.kontakt .e #email{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.kontakt .m  {
+    grid-column: 1;
+    grid-column-end: 2;
+    width: 100%;
+}
+
+ .kontakt .b {
+    grid-column-start: 1;
+    grid-column-end: 2;   
+} 
+
+#contactForm .contact #message {
+    width: 100%;
+}
+
+
+/* ------  FOOTER  ------ */
+
+footer {
+    background-color: var(--darkPurple);
+    color: var(--white);
+    font-size: 0.7rem;
+    padding: 4em 1rem;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.footWrap {
+    display: grid;
+    grid-row-gap: 2rem;
+    justify-items: center ;
+}
+
+footer a:link,
+footer a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:active,
+footer a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* ---  nyhetsbrev  --- */
+
+#newsletter
+{
+    display: none;
+}
+
+#inputEmail
+{
+    width: 15rem;
+}
+
+#btnEmail {
+    margin-left: 0.9rem;
+    padding: 1.05rem 2rem;
+}
+
+/* ---  fb, insta  --- */
+
+.socials{
+    display: grid;
+    grid-template-columns:  1fr 1fr;  
+}
+
+.fb,
+.insta {
+  margin: 5px;
+  font-size: 1rem;
+}
+
+.fbTxt,
+.instaTxt {
+    display:none;
+}
+
+/* ---  ***  --- */
+
+.border {
+    border: 0.5px solid red; /* endast för test */
+    }
+
+/* =============================================== */
+/* 540 - 576px - mobil */
+/* =============================================== */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+
+}
+
+
+/* =============================================== */
+/* 720 - 768px - mobil */
+/* =============================================== */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+/* ---  Rubbar  --- */
+
+.textblock h1 {
+    font-size: 3.5rem; /*rubbe textblock*/
+    font-weight: 700;
+    color: var(--purple1);
+}
+
+
+ 
+ /* ------  TOPIMG & SÖKRUTA UNDERSIDA  ------ */
+
+ .topWrap {
+    margin-top: 7.3rem; 
+}
+
+.topImage  {
+   
+    min-width: 100%;
+    height: 390px;
+    background-image: url(images/topimg/noodles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; 
+ 
+}
+
+
+
+/* ------  MAIN  ------ */
+
+/* ---  trending  --- */
+
+    .trendContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+         grid-gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+           bottom: 0;
+           height: 2.2rem;
+       }
+       
+       .time {
+           font-size: 0.8rem;
+           margin-right: 0.5rem;
+       }
+       
+       .fa-clock {
+           font-size: 0.8rem;
+       }
+       
+       .nrIngredients {
+           font-size: 0.8rem;
+       }
+
+/* ------  STORT TEXTBLOCK ------ */
+
+.textblockRubbe {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.twoCols {
+column-count: 2;
+column-gap: 1.8rem;
+}
+
+/* ------  KONTAKT FORMULÄR  ------ */
+
+/* ---  sök undersida --- */
+
+
+.kontakt {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px; 
+}
+
+.kontakt .f #firstname {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;  
+}
+
+.kontakt .l #lastname{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.kontakt .e #email{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.kontakt .m  {
+    grid-column: 1;
+    grid-column-end: 3;
+    width: 100%;
+}
+
+ .kontakt .b {
+    grid-column-start: 1;
+    grid-column-end: 2;   
+} 
+
+   
+
+    /* ------  FOOTER  ------ */
+
+    /* ---  fb, insta  --- */
+
+    .socials{
+        display: block;
+    }
+
+.fb,
+.insta {
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    align-items: center ; 
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.fbTxt,
+.instaTxt {
+    display: block;
+}
+
+}
+
+
+/* =============================================== */
+/* 960 - 992px */
+/* =============================================== */
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+
+    /* ---  sök start --- */
+
+.sokrutaStart {
+    top: 22%;
+}
+
+/* ------  MAIN  ------ */
+
+/* ---  trending  --- */
+
+    .info {
+        display: flex;
+        position: absolute;
+           bottom: 0;
+           height: 2.2rem;
+       }
+       
+       .time {
+           font-size: 0.9rem;
+           margin-right: 1rem;
+       }
+       
+       .fa-clock {
+           font-size: 0.9rem;
+       }
+       
+       .nrIngredients {
+           font-size: 0.9rem;
+       }
+
+    /* ------  FOOTER  ------ */
+
+    footer {
+        text-align: left;
+    }
+
+    #newsletter
+    {
+        display: block;
+    }
+
+    .footWrap {
+        display: grid;
+        grid-template-columns: 2fr 3fr 4fr auto;
+        align-items: end; /* linjerar nedtill */
+        justify-items: start; /* justerar från vänster */
+        
+        /* align-items: start | end | center | stretch; */
+        /* justify-items: start | end | center | stretch; */
+    }
+
+
+
+}
+
+
+/* =============================================== */
+/* 1140 - 1200px */
+/* =============================================== */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+
+    /* ------  FOOTER  ------ */
+    
+    .footWrap {
+        display: grid;
+        grid-template-columns: 2fr 3fr 4fr auto;
+        align-items: end; /* linjerar nedtill */
+        justify-items: start; /* justerar från vänster */
+        
+        /* align-items: start | end | center | stretch; */
+        /* justify-items: start | end | center | stretch; */
+    }
+
+    #newsletter
+    {
+        display: block;
+    }
+}
+
+

@@ -1,0 +1,44 @@
+<div class="topWrap"></div>
+
+<main>
+
+    <div class="container">
+
+        <!-- PageTitle -->
+        <h2 class="pageTitle">{{ pageTitle }}</h2>
+
+        <!-- Trending -->
+        <div class="trendContainer">
+
+
+            <div class="trending" ng-repeat="item in trending">
+                <div><img ng-src="images/{{ item.image }}" alt=""></div>
+                <div class="trendingTxt">
+                    <h4>{{ item.title }}</h4>
+                    <p>{{ item.text }}</p>
+
+                    <div class="info">
+                        <div class="time">
+                            <i class="far fa-clock"></i> {{ item.time }} min
+                        </div>
+                        <div class="nrIngredients">{{ item.ingredients }} ingredienser</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="textblock">
+            <h1 class="textblockRubbe">{{ testRubbe }}</h1>
+            
+            <div  class="twoCols">
+                <p>{{ testText1 }}</p><p>{{ testText2 }}</p><p>{{ testText3 }}</p><p>{{ testText4 }}</p>
+        </div>
+    </div>
+
+    </div>
+
+    
+</main>
+

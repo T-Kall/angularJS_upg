@@ -1,0 +1,64 @@
+<div class="topWrap"></div>
+<main>
+
+    <div class="container">
+
+        <!-- PageTitle-->
+        <h2 class="pageTitle">{{ pageTitle }}</h2>
+
+        <div class="textblock">
+            <h1 class="textblockRubbe">{{ testRubbe }}</h1>
+            
+            <div  class="twoCols">
+                <p>{{ testText1 }}</p><p>{{ testText2 }}</p><p>{{ testText3 }}</p><p>{{ testText4 }}</p>
+        </div>
+    </div>
+        
+    </div>
+</main>
+
+<span id="contactForm">
+
+    <div class="contact">
+        <div class="container">
+
+           <div ng-controller="personController">
+        
+            <div class="twoway">
+            <h6>Dina uppgifter</h6>
+            Välkommen {{person.firstName}} {{person.lastName}}<br>
+            E-post: {{person.email}}<br>
+            <i>{{person.message}}</i><br>
+            </div>
+        
+
+            <h6>Bekräfta dina uppgifter här</h6>
+            <div class="kontakt">
+                <div class="f">
+                    <label for="firstname">Förnamn</label>
+                    <input ng-model="person.firstName"  type="text" id="firstname" name="firstname" placeholder="Ange ditt förnamn">
+                </div>
+                <div class="l">
+                    <label for="lastname">Efternamn</label>
+                    <input  ng-model="person.lastName" type="text" id="lastname" name="lastname" placeholder="Ange ditt efternamn">
+                </div>
+
+                <div class="e">
+                    <label for="email">E-post</label>
+                    <input ng-model="person.email" type="email" id="email" name="email" placeholder="E-post">
+                </div>
+
+                <div class="m">
+                    <label for="message">Meddelande</label>
+                    <textarea ng-model="person.message" name="message" id="message" placeholder="Meddelande" cols="20" rows="6"></textarea>
+                </div>
+                <div class="b">
+                    <button type="submit">Skicka uppgifter</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</span>
+
